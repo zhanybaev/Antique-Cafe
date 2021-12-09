@@ -1,0 +1,157 @@
+@import 'consts';
+
+#contact_us{
+    display: flex;
+    justify-content: space-evenly;
+    background-image: url(../img/antique-cafe-bg-04.jpg);
+    min-height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 192px;
+    .contact_block{
+        width: 440px;
+        height: 415px;
+        background: rgba(255, 255, 255, 0.8);
+        border-radius: 0.75rem;
+        padding: 48px 40px;
+        h2{
+            color: $green;
+            font-size: 1.875rem;
+            line-height: 2.25rem;
+            font-family: Raleway, sans-serif;
+            font-weight: 400;
+            margin-bottom: 24px;
+        };
+        #info{
+            margin-bottom: 24px;
+            color: #111111
+        };
+        p{
+            margin-bottom: 8px;
+            font-family: Raleway, sans-serif;
+            line-height: 32px;
+            font-size: 18px;
+            span{
+                color: $green
+            }
+        };
+        .maps{
+            text-align: center;
+            button{
+                width: 280px;
+                height: 80px;
+                border-radius: 0.5rem;
+                font-family: Raleway, sans-serif;
+                font-size: 24px;
+                border: none;
+                background:  $green;
+                color: $w;
+                margin-top: 40px;
+                transition: 0.7s
+            }
+        }
+    };
+    .input_block{
+        background: rgba(0, 0, 0, 0.5);
+        width: 440px;
+        height: 415px;
+        padding: 48px 40px;
+        border-radius: 0.75rem;
+        form{
+            padding-top: 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            input{
+                background: transparent;
+                color: $w;
+                font-size: 18px;
+                margin-bottom: 16px;
+                padding-bottom: 16px ;
+                border-bottom: 1px solid #CC9966;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                width: 424px;
+                height: 28px
+            };
+            input::placeholder{
+                font-family: Raleway, sans-serif;
+                font-size: 18px;
+                color: gray;
+            }
+            textarea{
+                background: transparent;
+                margin-top: 16px;
+                width: 424px;
+                height: 168px;
+                padding-bottom: 16px ;
+                border-bottom: 1px solid #CC9966;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                color: $w;
+                font-size: 18px;
+            };
+            textarea::placeholder{
+                font-family: Raleway, sans-serif;
+                font-size: 18px;
+                color: gray;   
+            };
+            button{
+                background: transparent;
+                width: 57px;
+                height: 28px;
+                color: $w;
+                border: none;
+                font-family: Raleway, sans-serif;
+                font-size: 18px;
+                font-stretch: 100%;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+#open_map:hover{
+    background: $w !important;
+    color: $green !important;
+    transition: 0.5s;
+}
+
+@media all and (max-width: 1100px){
+    #contact_us{
+        flex-wrap: wrap;
+    }
+    .input_block{
+        margin-top: 40px;
+    }
+}
+
+@media all and(max-width:650px){
+    .contact_block{
+        width: 50% !important;
+        height: auto !important;
+        p{
+            line-height: 16px !important;
+        }
+        form{
+            align-items: center !important;
+        }
+        .maps{
+            text-align: start;
+        }
+        button{
+            width: 100% !important;
+        }
+    }
+
+    .input_block{
+        width: 50% !important;
+        input, textarea{
+            width: 100% !important;
+        }
+    }
+}

@@ -1,0 +1,115 @@
+@import 'consts';
+
+
+#about_cafe{
+    background-image: url(../img/antique-cafe-bg-03.jpg);
+    min-height: 800px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-top: 192px;
+    padding-bottom: 192px;
+    .text_block{
+        background: rgba(255, 255, 255, 0.8);
+        width: 423px;
+        height: 312px;
+        padding: 48px 48px 56px 48px;
+        margin-right: 123px;
+        border-radius: 0.75rem;
+        margin-bottom: 20px;
+        h2{
+            color: $green;
+            font-family: Raleway, sans-serif;
+            font-size: 36px;
+            font-weight: 500;
+            margin-bottom: 24px;
+        }
+        p{
+            text-align: start;
+            margin-bottom: 24px;
+            line-height: 32px;
+            font-family: Raleway, sans-serif;
+            font-size: 16px;
+            span{
+                color: $green;
+            }
+        }
+    };
+    #contact{
+        background-color: $green;
+        width: 180px;
+        height: 56px;
+        color: $w;
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        border-radius: 0.375rem;
+        border: none;
+        #comment_icon{
+            margin-right: 16px;
+        }
+    }
+}
+
+.about_content{
+    display: flex;
+    flex-direction: column;
+}
+
+// #about_cafe_head_text:hover{
+    
+// }
+
+@media all and(max-width: 900px){
+    #about_cafe{
+        padding-bottom: 0px !important;
+        min-height: 600px;
+        justify-content: center !important; 
+        .text_block{
+            margin-right: 0px;
+        }
+    }
+}
+
+
+@media all and(max-width: 760px){
+    .about_content{
+        justify-content: center;
+        align-items: center;
+    }
+    .text_block{
+        width: 80% !important;
+    }
+}
+
+@media all and(max-width: 580px){
+    #about_cafe{
+        padding-top: 100px !important;
+    }
+    .text_block{
+        height: auto !important;
+        width: 50% !important;
+        h2{
+            font-size: 30px !important;
+        }
+        p{
+            font-size: 13px !important;
+            line-height: 25px !important;
+        }
+    }
+    #contact{
+        font-size: 1rem !important;
+    }
+}
+
+@media all and(max-width: 420px){
+    .text_block{
+        p{
+            line-height: 15px !important;
+        }
+    }
+}

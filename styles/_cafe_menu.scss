@@ -1,0 +1,107 @@
+@import 'consts';
+
+#cafe_menu{
+    background-image: url(../img/antique-cafe-bg-02.jpg);
+    min-height: 1030px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align: center;
+    button{
+        text-align: center;
+        transition: 1s;
+        margin-top: 192px;
+        margin-bottom: 64px;
+        width: 347px;
+        height: 88px;
+        color: #544639;
+        background: $w;
+        border: none;
+        border-radius: 0.375rem;
+        font-weight: 500;
+        font-size: 36px;
+        font-family: Raleway, sans-serif;
+    }
+    .menu{
+        display: flex;
+        justify-content: space-evenly;
+        padding-bottom: 192px;
+        .coffees{
+            background:$brown;
+            width: 456px;
+            padding: 40px 32px;
+            border-radius: 0.75rem;
+            .coffee{
+                display: flex;
+                margin-bottom: 24px;
+                .coffee_info{
+                    display: flex;
+                    margin-left: 24px;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    .title{
+                        color: #FC6;
+                        margin-bottom: 12px;
+                        font-size: 1.25rem;
+                        line-height: 1.75rem;
+                        font-family: Raleway, sans-serif;
+                        font-weight: 400;
+                    }
+                    .price{
+                        margin-bottom: 4px;
+                        font-size: 1.125rem;
+                        line-height: 1.75rem;
+                        font-family: Raleway, sans-serif;
+                        color: rgb(255, 255, 255);
+                        font-weight: 300;
+                    }
+                }
+            }
+            #right_coffee{
+                flex-direction: row-reverse;
+                .coffee_info{
+                    margin-right: 24px;
+                }
+            }
+        }
+    }
+}
+
+
+#menu_button:hover{
+   box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.22);
+//    font-size: 37px;
+   background: #544639;
+   color: $w;
+}
+
+
+@media all and(max-width: 1170px){
+    .menu{
+        flex-direction: column;
+        align-items: center;
+        .coffees{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 580px){
+    .coffees{
+        width: 60% !important;
+        .coffee{
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+}
+
+@media all and (max-width: 400px){
+    #cafe_menu{
+        button{
+            width:300px;
+            margin-top: 100px;
+        }
+    }
+}
+
