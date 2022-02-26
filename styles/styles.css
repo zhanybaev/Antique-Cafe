@@ -237,7 +237,7 @@ header .container_1 .main_text h1 {
   transition: 0.6s;
 }
 
-header .container_1 .main_text h6 {
+header .container_1 .main_text h2 {
   color: #CC9966;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -401,6 +401,11 @@ header #explore #coffee_icon {
   margin-bottom: 24px;
 }
 
+#cafe_menu .menu .coffees .coffee .coffee-image {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 #cafe_menu .menu .coffees .coffee .coffee_info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -416,6 +421,8 @@ header #explore #coffee_icon {
 }
 
 #cafe_menu .menu .coffees .coffee .coffee_info .title {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   color: #FC6;
   margin-bottom: 12px;
   font-size: 1.25rem;
@@ -425,6 +432,8 @@ header #explore #coffee_icon {
 }
 
 #cafe_menu .menu .coffees .coffee .coffee_info .price {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   margin-bottom: 4px;
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -442,6 +451,25 @@ header #explore #coffee_icon {
 
 #cafe_menu .menu .coffees #right_coffee .coffee_info {
   margin-right: 24px;
+}
+
+.coffee-image:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-box-shadow: 5px 30px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+          box-shadow: 5px 30px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.title:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: white !important;
+}
+
+.price:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  color: #FC6 !important;
 }
 
 #menu_button:hover {
@@ -515,7 +543,7 @@ header #explore #coffee_icon {
   margin-bottom: 20px;
 }
 
-#about_cafe .text_block h2 {
+#about_cafe .text_block h3 {
   color: #006666;
   font-family: Raleway, sans-serif;
   font-size: 36px;
@@ -536,6 +564,8 @@ header #explore #coffee_icon {
 }
 
 #about_cafe #contact {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   background-color: #006666;
   width: 180px;
   height: 56px;
@@ -558,6 +588,13 @@ header #explore #coffee_icon {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#contact:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  background-color: white !important;
+  color: #006666 !important;
 }
 
 @media all and (max-width: 900px) {
@@ -637,7 +674,7 @@ header #explore #coffee_icon {
   padding: 48px 40px;
 }
 
-#contact_us .contact_block h2 {
+#contact_us .contact_block h3 {
   color: #006666;
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -672,7 +709,7 @@ header #explore #coffee_icon {
   border-radius: 0.5rem;
   font-family: Raleway, sans-serif;
   font-size: 24px;
-  border: none;
+  border: 2px solid #006666;
   background: #006666;
   color: white;
   margin-top: 40px;
@@ -719,25 +756,25 @@ header #explore #coffee_icon {
 #contact_us .input_block form input::-webkit-input-placeholder {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  color: gray;
+  color: #b9aea4;
 }
 
 #contact_us .input_block form input:-ms-input-placeholder {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  color: gray;
+  color: #b9aea4;
 }
 
 #contact_us .input_block form input::-ms-input-placeholder {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  color: gray;
+  color: #b9aea4;
 }
 
 #contact_us .input_block form input::placeholder {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  color: gray;
+  color: #b9aea4;
 }
 
 #contact_us .input_block form textarea {
@@ -757,30 +794,32 @@ header #explore #coffee_icon {
 #contact_us .input_block form textarea::-webkit-input-placeholder {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  color: gray;
+  color: #b9aea4;
 }
 
 #contact_us .input_block form textarea:-ms-input-placeholder {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  color: gray;
+  color: #b9aea4;
 }
 
 #contact_us .input_block form textarea::-ms-input-placeholder {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  color: gray;
+  color: #b9aea4;
 }
 
 #contact_us .input_block form textarea::placeholder {
   font-family: Raleway, sans-serif;
   font-size: 18px;
-  color: gray;
+  color: #b9aea4;
 }
 
 #contact_us .input_block form button {
   background: transparent;
   width: 57px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   height: 28px;
   color: white;
   border: none;
@@ -788,6 +827,24 @@ header #explore #coffee_icon {
   font-size: 18px;
   font-stretch: 100%;
   font-weight: 400;
+}
+
+#send-button:hover {
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, 0.6) 30%, #000 50%, rgba(0, 0, 0, 0.6) 70%);
+  -webkit-mask-size: 200%;
+  -webkit-animation: shine 2s infinite;
+          animation: shine 2s infinite;
+}
+
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
 }
 
 #open_map:hover {

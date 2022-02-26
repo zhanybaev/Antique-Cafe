@@ -41,6 +41,7 @@
         }
     };
     #contact{
+        transition: 0.6s;
         background-color: $green;
         width: 180px;
         height: 56px;
@@ -60,9 +61,11 @@
     flex-direction: column;
 }
 
-// #about_cafe_head_text:hover{
-    
-// }
+#contact:hover{
+    transition: 0.6s;
+    background-color: $w !important;
+    color: $green !important;
+}
 
 @media all and(max-width: 900px){
     #about_cafe{

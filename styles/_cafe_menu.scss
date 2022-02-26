@@ -34,12 +34,16 @@
             .coffee{
                 display: flex;
                 margin-bottom: 24px;
+                .coffee-image{
+                    transition: 1s;
+                }
                 .coffee_info{
                     display: flex;
                     margin-left: 24px;
                     flex-direction: column;
                     align-items: flex-start;
                     .title{
+                        transition: 0.6s;
                         color: #FC6;
                         margin-bottom: 12px;
                         font-size: 1.25rem;
@@ -48,6 +52,7 @@
                         font-weight: 400;
                     }
                     .price{
+                        transition: 0.6s;
                         margin-bottom: 4px;
                         font-size: 1.125rem;
                         line-height: 1.75rem;
@@ -67,6 +72,20 @@
     }
 }
 
+.coffee-image:hover {
+    transition: 0.6s;
+    box-shadow: 5px 30px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.title:hover{
+    transition: 0.6s;
+    color: rgb(255, 255, 255) !important;
+}
+
+.price:hover{
+    transition: 0.6s;
+    color: #FC6 !important;
+}
 
 #menu_button:hover{
    box-shadow: 0 14px 28px rgba(0,0,0,0.5), 0 10px 10px rgba(0,0,0,0.22);
