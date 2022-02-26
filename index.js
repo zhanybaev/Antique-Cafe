@@ -1,5 +1,5 @@
-let nav = document.getElementById('nav')
-let ul = document.getElementById('nav_ul')
+let nav = document.getElementById('nav');
+let ul = document.getElementById('nav_ul');
 
 window.addEventListener('scroll', function (e) {
     if (e.target.documentElement.scrollTop > 10) {
@@ -7,14 +7,6 @@ window.addEventListener('scroll', function (e) {
         ul.style.marginTop = '14px'
     } else {
         nav.style.backgroundColor = 'transparent'
-        ul.style.marginTop = '32px'
-    }
-})
-
-
-
-let menu = document.getElementById("menu-collapsed")
-menu.addEventListener('click', function(){
-    console.log('ck');
-    menu.classList.toggle("menu-expanded")
-})
+        ul.style.marginTop = '32px';
+    };
+});
